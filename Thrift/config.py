@@ -35,4 +35,4 @@ class Config(object):
 
     def __init__(self):
         self.APP_NAME = 'IOS\t8.16.2\tIphone X\t8.1.0'
-        self.USER_AGENT = 'Line/7.5.2'
+        self.USER_AGENT = 'Line/8.16.2' #7.5.2'
