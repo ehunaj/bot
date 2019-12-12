@@ -3003,7 +3003,7 @@ def clBot(op):
                                       ke.leaveGroup(i)
                                       ehun.sendText(msg.to,"Success Leave All Group")
 
-                           elif "KaptenLeave" in msg.text:
+                            elif "KaptenLeave" in msg.text:
                               if msg._from in Creator:
                                   gid = ehun.getGroupIdsJoined()
                                   for i in gid:
