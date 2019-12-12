@@ -8,32 +8,31 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #    KAPTEN     ==================
-cl = LineClient(id='ehunaja0@gmail.com',passwd='ehun4321')
-#cl = LineClient()
+cl = LineClient()
 #cl = LineClient(authToken='ELbWQk7gzRAIDxpZbhNc.xmOZkKoDi9P/nYUM4NOsla.DTQXEiUMjwpN3/ugLX28CoJ+BEKy2BAmmr4wodxNjl8=')
 #cl = LineClient(id='   @gmail.com',passwd='passwd mu')
-ki = LineClient(id='ehunaja1@gmail.com',passwd='ehun4321')
-#ki = LineClient()
+
+ki = LineClient()
 #ki = LineClient(authToken='ELdlex83pgdIINxfS9xd.PVmbdG5nG77Km5hrSxbgtq.pV+gLIFaHvihv/ddKLh9r/blsvFJTG3BBkuIrZhL3Ko=')
 #ki = LineClient(id='   @gmail.com',passwd='passwd mu')
-kk = LineClient(id='ehunaja2@gmail.com',passwd='ehun4321')
-#kk = LineClient()
+
+kk = LineClient()
 #kk = LineClient(authToken='ELcsZWmnSMAbLtzDARQe.NzWU4uHxu25IbVF0crqixG.OyHbHaGHiKMOjAuCz5e+Bw32DkolaAZYbP+tQYzMo+c=')
 #kk = LineClient(id='   @gmail.com',passwd='passwd mu')
-kc = LineClient(id='ehunaja3@gmail.com',passwd='ehun4321')
-#kc = LineClient()
+
+kc = LineClient()
 #kc = LineClient(authToken='ELh71kPbPXpEnuY20zc9.p6BZ50ZbaAbHQXlkeO8fkq.VoWaY08pxOzfQUshkPAzRP+ANFH7hBR5eGIORQUmbmg=')
 #kc = LineClient(id='   @gmail.com',passwd='passwd mu')
-kd = LineClient(id='ehunaja4@gmail.com',passwd='ehun4321')
-#kd = LineClient()
+
+kd = LineClient()
 #kd = LineClient(authToken='EL34TOFo6HJffCd82W24.nPdFxcNp9N+djrQIkTL6za.PIH5/UpP7hITyoDEz3S1ij9VEb7BT/wv4OtsmiFWK+8=')
 #kd = LineClient(id='   @gmail.com',passwd='passwd mu')
-ke = LineClient(id='ehunaja5@gmail.com',passwd='ehun4321')
-#ke = LineClient()
+
+ke = LineClient()
 #ke = LineClient(authToken='ELXITAhDuLr0XjLMYNj6./P1jbnnzbpY+YBIdcOFj1G.uJYnkxGphgupEuYCYxRFxoo4brdkke9W7vCOyETAFwk=')
 #ke = LineClient(id='   @gmail.com',passwd='passwd mu')
-ehun = LineClient(id='ehunaja6@gmail.com',passwd='ehun4321')
-#ehun = LineClient()
+#====INDUK   ========
+ehun = LineClient()
 #ehun = LineClient(authToken='ELXITAhDuLr0XjLMYNj6.
 #ehun = LineClient(id='   @gmail.com',passwd='passwd mu')
 
