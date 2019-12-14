@@ -3249,7 +3249,7 @@ def ehunBot(op):
                               if msg._from in admin:
                                   gid = s1.getGroupIdsJoined()
                                   for i in gid:
-                                      s1.leaveGroup(i(
+                                      s1.leaveGroup(i)
                                       s2.leaveGroup(i)
                                       s3.leaveGroup(i)
                                       ehun.sendText(msg.to,"Kicker Success Leave AllGroup")
@@ -3272,7 +3272,7 @@ def ehunBot(op):
                               if msg._from in Creator:
                                   gid = ehun.getGroupIdsJoined()
                                   for i in gid:
-                                      ehun.sendText(i,"Bot Di Paksa Keluar OlehOwner!\nAyo left teman2\nAssalamualikum wr wb All Member\nAdd Owner kami")
+                                      ehun.sendText(i,"Bot Di Paksa Keluar OlehOwner!\nleft dulu ya kak\nAssalamualikum wr wb All Member\nAdd Owner kami")
                                       ehun.sendContact(i,"ub3808de9f7df35f57fb366d157f9790a")
                                       ehun.leaveGroup(i)
                                       ehun.sendMessage(msg.to,"Sukses boss")
