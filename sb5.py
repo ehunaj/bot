@@ -7,37 +7,44 @@ import json, time, random, sys, json, codecs, threading, glob, re, string, os, r
 from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
-#    KAPTEN     ==================
-s1 = LineClient(id='ehunaj@gmail.com',passwd='ehun4321')
-s2 = LineClient(id='ehun517@gmail.com',passwd='ehun4321')
-s3 = LineClient(id='ehun56@gmail.com',passwd='ehun4321')
+#    KICKER NYA    ==================
+s1 = LineClient()
+#s1 = LineClient(authToken='EMOcSLUpjjUBQrJx5W84.BvIR7Jw9VfAdsJzU/uMhba.iWLLvazqYVi85HpG1msEZQ8j8rRh0qN0zcbAnZU6v2Q=')
+#s1 = LineClient(id='   @gmail.com',passwd='passwd mu')
 
-cl = LineClient(id='ehunaja0@gmail.com',passwd='ehun4321')
-#cl = LineClient()
+s2 = LineClient()
+#s2 = LineClient(authToken='EMOcSLUpjjUBQrJx5W84.BvIR7Jw9VfAdsJzU/uMhba.iWLLvazqYVi85HpG1msEZQ8j8rRh0qN0zcbAnZU6v2Q=')
+#s2 = LineClient(id='   @gmail.com',passwd='passwd mu')
+
+s3 = LineClient()
+#s3 = LineClient(authToken='EMOcSLUpjjUBQrJx5W84.BvIR7Jw9VfAdsJzU/uMhba.iWLLvazqYVi85HpG1msEZQ8j8rRh0qN0zcbAnZU6v2Q=')
+#s3 = LineClient(id='   @gmail.com',passwd='passwd mu')
+#    ASIS NYA
+cl = LineClient()
 #cl = LineClient(authToken='EMOcSLUpjjUBQrJx5W84.BvIR7Jw9VfAdsJzU/uMhba.iWLLvazqYVi85HpG1msEZQ8j8rRh0qN0zcbAnZU6v2Q=')
 #cl = LineClient(id='   @gmail.com',passwd='passwd mu')
-ki = LineClient(id='ehunaja1@gmail.com',passwd='ehun4321')
-#ki = LineClient()
+
+ki = LineClient()
 #ki = LineClient(authToken='EMcQJjjNxzNdxLwgo6p4.wOkmirNWe41AVCDdjgw/za.0Y/SCkb7rz9g4fWOhCln9A5ycIJKkpQ/TdCWYSXRtXI=')
 #ki = LineClient(id='   @gmail.com',passwd='passwd mu')
-kk = LineClient(id='ehunaja2@gmail.com',passwd='ehun4321')
-#kk = LineClient()
+
+kk = LineClient()
 #kk = LineClient(authToken='EMvhD8HqHTGEnvXotbTe.pYxjKbe7w+1iIyyJvihN7G.KYR/LuByF5p4MxfdlbN4PQK1UGd16SszUGuF1f6iQGg=')
 #kk = LineClient(id='   @gmail.com',passwd='passwd mu')
-kc = LineClient(id='ehunaja3@gmail.com',passwd='ehun4321')
-#kc = LineClient()
+
+kc = LineClient()
 #kc = LineClient(authToken='EMo7ivZN8W4RLDoOevW1.RNY0mD5hMgMbcfE1tEAyWq.mnOltEus6a4PP+UlrQ6YxLn1zIJ3nbr/LaTYF5SgDJk=')
 #kc = LineClient(id='   @gmail.com',passwd='passwd mu')
-kd = LineClient(id='ehunaja4@gmail.com',passwd='ehun4321')
-#kd = LineClient()
+
+kd = LineClient()
 #kd = LineClient(authToken='EL34TOFo6HJffCd82W24.nPdFxcNp9N+djrQIkTL6za.PIH5/UpP7hITyoDEz3S1ij9VEb7BT/wv4OtsmiFWK+8=')
 #kd = LineClient(id='   @gmail.com',passwd='passwd mu')
-ke = LineClient(id='ehunaja5@gmail.com',passwd='ehun4321')
-#ke = LineClient()
+
+ke = LineClient()
 #ke = LineClient(authToken='ELXITAhDuLr0XjLMYNj6./P1jbnnzbpY+YBIdcOFj1G.uJYnkxGphgupEuYCYxRFxoo4brdkke9W7vCOyETAFwk=')
 #ke = LineClient(id='   @gmail.com',passwd='passwd mu')
-ehun = LineClient(id='ehunaja6@gmail.com',passwd='ehun4321')
-#ehun = LineClient()
+#      INDUK NYA
+ehun = LineClient()
 #ehun = LineClient(authToken='ELXITAhDuLr0XjLMYNj6.
 #ehun = LineClient(id='   @gmail.com',passwd='passwd mu')
 
