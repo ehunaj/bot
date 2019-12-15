@@ -80,7 +80,7 @@ Emid = ke.profile.mid
 Fmid = ehun.profile.mid
 
 ABC = [cl,ki,kk,kc,kd,ke]
-TIM = [s1,s2,s3]
+
 Bots = [aid,bid,cid,mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid]
 Creator = ["u7fd8cbb3aca386f044ef5d845e4398bd","uf0d11974793b860c3d1ef4e593841581","ub3808de9f7df35f57fb366d157f9790a"]
 admin = ["u7fd8cbb3aca386f044ef5d845e4398bd","uf0d11974793b860c3d1ef4e593841581","ub3808de9f7df35f57fb366d157f9790a"]
@@ -1152,21 +1152,6 @@ def ehunBot(op):
                             #cl.sendText(op.param1,"☆Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
                         except:
                             pass
-            else:
-                if op.param3 in bl["blacklist"]:
-                    ehun.cancelGroupInvitation(op.param1, [op.param3])
-                else:
-                    Inviter = op.param3.replace("",',')
-                    InviterX = Inviter.split(",")
-                    for tag in InviterX:
-                        if tag in bl["blacklist"]:
-                            try:
-                               ehun.cancelGroupInvitation(op.param1,[tag])
-                               bl['blacklist'][op.param2] = True
-                               with open('bl.json', 'w') as fp:
-                                   json.dump(bl, fp, sort_keys=True, indent=4)
-                            except:
-                                pass
 
 
 
@@ -1193,6 +1178,7 @@ def ehunBot(op):
             else:
                 if op.param3 in bl["blacklist"]:
                     cl.cancelGroupInvitation(op.param1, [op.param3])
+                    cl.kickoutFromGroup(op.param1,[op.param2])
                     cl.sendText(op.param1, "BlacklistDetected")
                 else:
                     Inviter = op.param3.replace("",',')
@@ -1230,6 +1216,7 @@ def ehunBot(op):
             else:
                 if op.param3 in bl["blacklist"]:
                     ki.cancelGroupInvitation(op.param1, [op.param3])
+                    ki.kickoutFromGroup(op.param1,[op.param2])
                     ki.sendText(op.param1, "BlacklistDetected")
                 else:
                     Inviter = op.param3.replace("",',')
@@ -1268,6 +1255,7 @@ def ehunBot(op):
             else:
                 if op.param3 in bl["blacklist"]:
                     kk.cancelGroupInvitation(op.param1, [op.param3])
+                    kk.kickoutFromGroup(op.param1,[op.param2])
                     kk.sendText(op.param1, "BlacklistDetected")
                 else:
                     Inviter = op.param3.replace("",',')
@@ -1306,6 +1294,7 @@ def ehunBot(op):
             else:
                 if op.param3 in bl["blacklist"]:
                     kc.cancelGroupInvitation(op.param1, [op.param3])
+                    kc.kickoutFromGroup(op.param1,[op.param2])
                     kc.sendText(op.param1, "BlacklistDetected")
                 else:
                     Inviter = op.param3.replace("",',')
@@ -1344,6 +1333,7 @@ def ehunBot(op):
             else:
                 if op.param3 in bl["blacklist"]:
                     kd.cancelGroupInvitation(op.param1, [op.param3])
+                    kd.kickoutFromGroup(op.param1,[op.param2])
                     kd.sendText(op.param1, "BlacklistDetected")
                 else:
                     Inviter = op.param3.replace("",',')
@@ -1382,6 +1372,7 @@ def ehunBot(op):
             else:
                 if op.param3 in bl["blacklist"]:
                     ke.cancelGroupInvitation(op.param1, [op.param3])
+                    ke.kickoutFromGroup(op.param1,[op.param2])
                     ke.sendText(op.param1, "BlacklistDetected")
                 else:
                     Inviter = op.param3.replace("",',')
@@ -2109,7 +2100,7 @@ def ehunBot(op):
                               if msg._from in admin:
                                 wait["js"] = True
                                 G = ehun.getGroup(msg.to)
-                                lis = [Emid]
+                                lis = [aid]
                                 ehun.inviteIntoGroup(msg.to,lis)
                                 ehun.sendText(msg.to,"Ok on")
 
@@ -3280,9 +3271,9 @@ def ehunBot(op):
 
                             elif text.lower() == "check":
                               if msg._from in admin:
-                                  try:ehun.inviteIntoGroup(to, ["ub3808de9f7df35f57fb366d157f9790a"]);has = "OK"
+                                  try:ehun.inviteIntoGroup(msg.to, [Fmid]);has = "OK"
                                   except:has = "NOT"
-                                  try:ehun.kickoutFromGroup(to, ["ub3808de9f7df35f57fb366d157f9790a"]);has1 = "OK"
+                                  try:ehun.kickoutFromGroup(msg.to, [Fmid]);has1 = "OK"
                                   except:has1 = "NOT"
                                   if has == "OK":sil = "normal"
                                   else:sil = "limit"
@@ -3392,7 +3383,7 @@ def ehunBot(op):
                                                 ehun.sendText(msg.to,"Succes BosQ")
                             elif text.lower() == 'banlist':
                                 if bl["blacklist"] == {}:
-                                    cl.sendText(msg.to,"Tidak Ada")
+                                    ehun.sendText(msg.to,"Tidak Ada")
                                 else:
                                     mc = ""
                                 for mi_d in bl["blacklist"]:
@@ -3649,7 +3640,7 @@ def ehunBot(op):
                                       if target not in Bots:
                                           try:
                                               bl["blacklist"][target] = True
-                                              klist = [cl,ki,kk,kc]
+                                              klist = [cl,ki,kk,kc,kd,ke]
                                               kicker = random.choice(klist)
                                               kicker.kickoutFromGroup(msg.to, [target])
                                           except:
