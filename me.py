@@ -8,7 +8,6 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #    KAPTEN     =================
-#ehun = LineClient(id='ajasarehun@gmail.com',passwd='ehun4321')
 ehun = LineClient(authToken='EMXtyQOdtWdqQfSTOWxa.S4cn6FFFnFv+S2Brv+L5cG.EqXHqPaXT5yRCcgAk3tATYK7M56byapg9U2Of7ITOrA=')
 print("OK")
 msg_dict = {}
