@@ -8,18 +8,11 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #    KAPTEN     =================
-cl = LineClient(id='ehunaj1@gmail.com',passwd='ehun4321')
-#cl = LineClient(authToken='EMV49uDwKcPIN3c043U1.P+YYSHMJEwcBF7nhsJZ5mq.X7T0f/7Hwi21rc7bCwfRjsKyLk71ZtqtilsJ1eWhhrs=')
-#ki = LineClient(authToken='EMfu2oQiUeooRB5KbIPd.qkmz3YyBi855gGYJE9n/7q.vJ3qvKEuuE6xsfniZE8X7S4w+uDfqizOZH4ocKZjQpU=')
-ki = LineClient(id='ehunaj2@gmail.com',passwd='ehun4321')
-kk = LineClient(id='ehunaj3@gmail.com',passwd='ehun4321')
-
-#kk = LineClient(authToken='EMoObLKITCfzMto0Sxr6.ddc/NgmgnzezQlzPonol9G./GnWiZTrdcwmt6IFU7tgj15Cnc90n/GTh3uzo+Y9wHk=')
-#kc = LineClient(authToken='EMcmWyFa71bVPNR95xh3.cYE0uwknBRuvOzYJRENEaW.9F+KPuKf9/7gXtfz90eXGePj1qAjWbnxyqBPwQF0US0=')
-kc = LineClient(id='ehunaj4@gmail.com',passwd='ehun4321')
-ehun = LineClient(id='ehunaja6@gmail.com',passwd='ehun4321')
-
-#ehun = LineClient(authToken='EMum6AipEeZUEaj4YGLa.NhC6xpXFEY5Y3+NCBRGdMG.0J9pr3xfP32avH54bthTyT8wXW65UIc3UGEAgsTAwPg=')
+cl = LineClient(authToken='EMV49uDwKcPIN3c043U1.P+YYSHMJEwcBF7nhsJZ5mq.X7T0f/7Hwi21rc7bCwfRjsKyLk71ZtqtilsJ1eWhhrs=')
+ki = LineClient(authToken='EMfu2oQiUeooRB5KbIPd.qkmz3YyBi855gGYJE9n/7q.vJ3qvKEuuE6xsfniZE8X7S4w+uDfqizOZH4ocKZjQpU=')
+kk = LineClient(authToken='EMoObLKITCfzMto0Sxr6.ddc/NgmgnzezQlzPonol9G./GnWiZTrdcwmt6IFU7tgj15Cnc90n/GTh3uzo+Y9wHk=')
+kc = LineClient(authToken='EMcmWyFa71bVPNR95xh3.cYE0uwknBRuvOzYJRENEaW.9F+KPuKf9/7gXtfz90eXGePj1qAjWbnxyqBPwQF0US0=')
+ehun = LineClient(authToken='EMum6AipEeZUEaj4YGLa.NhC6xpXFEY5Y3+NCBRGdMG.0J9pr3xfP32avH54bthTyT8wXW65UIc3UGEAgsTAwPg=')
 print("success=====Ketik Bottoken di Group nu untuk ambil token nya.")
 
 msg_dict = {}
