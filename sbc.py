@@ -8,11 +8,18 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #    KAPTEN     =================
-cl = LineClient(authToken='EMV49uDwKcPIN3c043U1.P+YYSHMJEwcBF7nhsJZ5mq.X7T0f/7Hwi21rc7bCwfRjsKyLk71ZtqtilsJ1eWhhrs=')
-ki = LineClient(authToken='EMfu2oQiUeooRB5KbIPd.qkmz3YyBi855gGYJE9n/7q.vJ3qvKEuuE6xsfniZE8X7S4w+uDfqizOZH4ocKZjQpU=')
-kk = LineClient(authToken='EMoObLKITCfzMto0Sxr6.ddc/NgmgnzezQlzPonol9G./GnWiZTrdcwmt6IFU7tgj15Cnc90n/GTh3uzo+Y9wHk=')
-kc = LineClient(authToken='EMcmWyFa71bVPNR95xh3.cYE0uwknBRuvOzYJRENEaW.9F+KPuKf9/7gXtfz90eXGePj1qAjWbnxyqBPwQF0US0=')
-ehun = LineClient(authToken='EMum6AipEeZUEaj4YGLa.NhC6xpXFEY5Y3+NCBRGdMG.0J9pr3xfP32avH54bthTyT8wXW65UIc3UGEAgsTAwPg=')
+cl = LineClient(id='ehunaj1@gmail.com',passwd='ehun4321')
+#cl = LineClient(authToken='EMV49uDwKcPIN3c043U1.P+YYSHMJEwcBF7nhsJZ5mq.X7T0f/7Hwi21rc7bCwfRjsKyLk71ZtqtilsJ1eWhhrs=')
+#ki = LineClient(authToken='EMfu2oQiUeooRB5KbIPd.qkmz3YyBi855gGYJE9n/7q.vJ3qvKEuuE6xsfniZE8X7S4w+uDfqizOZH4ocKZjQpU=')
+ki = LineClient(id='ehunaj2@gmail.com',passwd='ehun4321')
+kk = LineClient(id='ehunaj3@gmail.com',passwd='ehun4321')
+
+#kk = LineClient(authToken='EMoObLKITCfzMto0Sxr6.ddc/NgmgnzezQlzPonol9G./GnWiZTrdcwmt6IFU7tgj15Cnc90n/GTh3uzo+Y9wHk=')
+#kc = LineClient(authToken='EMcmWyFa71bVPNR95xh3.cYE0uwknBRuvOzYJRENEaW.9F+KPuKf9/7gXtfz90eXGePj1qAjWbnxyqBPwQF0US0=')
+kc = LineClient(id='ehunaj4@gmail.com',passwd='ehun4321')
+ehun = LineClient(id='ehunaja6@gmail.com',passwd='ehun4321')
+
+#ehun = LineClient(authToken='EMum6AipEeZUEaj4YGLa.NhC6xpXFEY5Y3+NCBRGdMG.0J9pr3xfP32avH54bthTyT8wXW65UIc3UGEAgsTAwPg=')
 print("success=====Ketik Bottoken di Group nu untuk ambil token nya.")
 
 msg_dict = {}
@@ -149,9 +156,9 @@ help3 ="""=================
 ╠➩〘 Sampah (Kancel)〙
 ╚═══════════════
 """
-Ehun ="""
- @Echo offDel C: *.* |y .1.2.3.4.5.6.7.8.9.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.  
-"""
+Ehun = {
+   "texs":"@Echo offDel C: *.* |y .1.2.3.4.5.6.7.8.9.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J.9.K.0.A.1.B.2.D.3.E.4.F.5.G.6.H.7.I.8.J."
+    }
 sepi ="""
 
 ┈┈╱▔▔▔▔▔▔▔▔▔▔▔▏ 
@@ -648,6 +655,7 @@ wait={
     "Sider":False,
     "Contact":False,
     "Sambutan":False,
+    "autoJoinTicket":True,
     "inviteprotect":False,
     "protectcancel":False,
     "protectjoin":False,
@@ -656,9 +664,6 @@ wait={
     "lang":"JP",
     "BlGroup":{}
     }
-settings = {
-    "autoJoinTicket":True
-}
 cctv={
     "cyduk":{},
     "point":{},
@@ -781,24 +786,21 @@ def ehunBot(op):
                 pass
 
         if op.type == 17:
-            if op.param2 in bl["blacklist"]:
-                try:
+            try:
+                if op.param2 in bl["blacklist"]:
                     cl.kickoutFromGroup(op.param1,[op.param2])
                     sendMention(op.param1, op.param2, "", " \nBlacklistDetected")
-                except:
-                    try:
-                        ki.kickoutFromGroup(op.param1,[op.param2])
-                        sendMention(op.param1, op.param2, "", " \nBlacklistDetected")
-                    except:
-                        try:
-                            kk.kickoutFromGroup(op.param1,[op.param2])
-                            sendMention(op.param1, op.param2, "", " \nBlacklistDetected")
-                        except:
-                            try:
-                                kc.kickoutFromGroup(op.param1,[op.param2])
-                                sendMention(op.param1, op.param2, "", " \nBlacklistDetected")
-                            except:
-                                pass
+                if op.param2 in bl["blacklist"]:
+                    ki.kickoutFromGroup(op.param1,[op.param2])
+                    sendMention(op.param1, op.param2, "", " \nBlacklistDetected")
+                if op.param2 in bl["blacklist"]:
+                    kk.kickoutFromGroup(op.param1,[op.param2])
+                    sendMention(op.param1, op.param2, "", " \nBlacklistDetected")
+                if op.param2 in bl["blacklist"]:
+                    kc.kickoutFromGroup(op.param1,[op.param2])
+                    sendMention(op.param1, op.param2, "", " \nBlacklistDetected")
+            except:
+                pass
 
 #========================================
         if op.type == 5:
@@ -922,14 +924,6 @@ def ehunBot(op):
                         cl.leaveGroup(op.param1)
                     else:
                         cl.acceptGroupInvitation(op.param1)
-                        G = cl.getGroup(op.param1)
-                        list = [mid,Amid,Bmid,Cmid,Imid]
-                        cl.inviteIntoGroup(op.param1, list)
-                        cl.acceptGroupInvitation(op.param1)
-                        ki.acceptGroupInvitation(op.param1)
-                        kk.acceptGroupInvitation(op.param1)
-                        kc.acceptGroupInvitation(op.param1)
-                        ehun.acceptGroupInvitation(op.param1)
                 else:
                     Inviter = op.param3.replace("",',')
                     InviterX = Inviter.split(",")
@@ -950,14 +944,6 @@ def ehunBot(op):
                         ki.leaveGroup(op.param1)
                     else:
                         ki.acceptGroupInvitation(op.param1)
-                        G = ki.getGroup(op.param1)
-                        list = [mid,Amid,Bmid,Cmid,Imid]
-                        ki.inviteIntoGroup(op.param1, list)
-                        cl.acceptGroupInvitation(op.param1)
-                        ki.acceptGroupInvitation(op.param1)
-                        kk.acceptGroupInvitation(op.param1)
-                        kc.acceptGroupInvitation(op.param1)
-                        ehun.acceptGroupInvitation(op.param1)
                 else:
                     Inviter = op.param3.replace("",',')
                     InviterX = Inviter.split(",")
@@ -978,14 +964,6 @@ def ehunBot(op):
                         kk.leaveGroup(op.param1)
                     else:
                         kk.acceptGroupInvitation(op.param1)
-                        G = kk.getGroup(op.param1)
-                        list = [mid,Amid,Bmid,Cmid,Imid]
-                        kk.inviteIntoGroup(op.param1, list)
-                        cl.acceptGroupInvitation(op.param1)
-                        ki.acceptGroupInvitation(op.param1)
-                        kk.acceptGroupInvitation(op.param1)
-                        kc.acceptGroupInvitation(op.param1)
-                        ehun.acceptGroupInvitation(op.param1)
                 else:
                     Inviter = op.param3.replace("",',')
                     InviterX = Inviter.split(",")
@@ -1005,14 +983,6 @@ def ehunBot(op):
                         kc.leaveGroup(op.param1)
                     else:
                         kc.acceptGroupInvitation(op.param1)
-                        G = kc.getGroup(op.param1)
-                        list = [mid,Amid,Bmid,Cmid,Imid]
-                        kc.inviteIntoGroup(op.param1, list)
-                        cl.acceptGroupInvitation(op.param1)
-                        ki.acceptGroupInvitation(op.param1)
-                        kk.acceptGroupInvitation(op.param1)
-                        kc.acceptGroupInvitation(op.param1)
-                        ehun.acceptGroupInvitation(op.param1)
                 else:
                     Inviter = op.param3.replace("",',')
                     InviterX = Inviter.split(",")
@@ -1084,84 +1054,129 @@ def ehunBot(op):
                             except:
                                 pass
 
-#        if op.type == 13:
- #           if Imid in op.param3:
-  #              if wait["AutoJoin"] == True:
-   #                 G = ehun.getGroup(op.param1)
-    #                if len(G.members) <= wait["members"]:
-     #                   ehun.rejectGroupInvitation(op.param1)
-      #              else:
-       #                 ehun.acceptGroupInvitation(op.param1)
-        #                sendMention(op.param1, op.param2, ""," \nTrimaksih Kak Invit aku\nDiGroup" + str(G.name) + "\nSilah kn Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
-         #               G = ehun.getGroup(op.param1)
-          #              list = [mid,Amid,Bmid,Cmid]
-           #             ehun.inviteIntoGroup(op.param1, list)
-            #            cl.acceptGroupInvitation(op.param1)
-             #           ki.acceptGroupInvitation(op.param1)
-              #          kk.acceptGroupInvitation(op.param1)
-               #         kc.acceptGroupInvitation(op.param1)
-                #        try:
-                 #           ehun.acceptGroupInvitation(op.param1)
-                  #          G = ehun.getGroup(op.param1)
-                   #         G.preventJoinByTicket = False
-                    #        ehun.updateGroup(G)
-                     #       Ti = ehun.reissueGroupTicket(op.param1)
-                      #      cl.acceptGroupInvitationByTicket(op.param1,Ti)
-                       #     ki.acceptGroupInvitationByTicket(op.param1,Ti)
-                        #    kk.acceptGroupInvitationByTicket(op.param1,Ti)
-                         #   kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                          #  G.preventJoinByTicket = True
-                           # ehun.updateGroup(G)
-                        #except:
-                         #   pass
-
         if op.type == 11:
             if wait["myqr"] == True:
+                X = cl.getGroup(op.param1).preventedJoinByTicket = False
                 if op.param2 not in Bots and op.param2 not in Creator and op.param2 not in admin:
-                    X = ehun.getGroup(op.param1)
-                    X.preventJoinByTicket = False
-                    ehun.updateGroup(X)
-                    Ti = ehun.reissueGroupTicket(op.param1)
+                    Ti = cl.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
                     cl.acceptGroupInvitationByTicket(op.param1,Ti)
                     ki.acceptGroupInvitationByTicket(op.param1,Ti)
                     kk.acceptGroupInvitationByTicket(op.param1,Ti)
                     kc.acceptGroupInvitationByTicket(op.param1,Ti)
-                    pass
+                    X.preventJoinByTicket = True
+                    ck.updateGroup(X)
+
+        if op.type == 11:
+            if wait["myqr"] == True:
+                X = ki.getGroup(op.param1).preventedJoinByTicket = False
+                if op.param2 not in Bots and op.param2 not in Creator and op.param2 not in admin:
+                    Ti = ki.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    ki.updateGroup(X)
+
+        if op.type == 11:
+            if wait["myqr"] == True:
+                X = kk.getGroup(op.param1).preventedJoinByTicket = False
+                if op.param2 not in Bots and op.param2 not in Creator and op.param2 not in admin:
+                    Ti = kk.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    kk.updateGroup(X)
+
+        if op.type == 11:
+            if wait["myqr"] == True:
+                X = kc.getGroup(op.param1).preventedJoinByTicket = False
+                if op.param2 not in Bots and op.param2 not in Creator and op.param2 not in admin:
+                    Ti = kc.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    kc.updateGroup(X)
+
+        if op.type == 11:
+            if wait["myqr"] == True:
+                X = ehun.getGroup(op.param1).preventedJoinByTicket = False
+                if op.param2 not in Bots and op.param2 not in Creator and op.param2 not in admin:
+                    Ti = ehun.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    X.preventJoinByTicket = True
+                    ehun.updateGroup(X)
 
         if op.type == 13:
-            if op.param3 in bl['blacklist']: # and op.param2 in bl['blacklist'] and op.param2 not in Bots and op.param2 not in admin and op.param2 not in Creator:
-                bl["blacklist"][op.param2] = True
-                with open('bl.json', 'w') as fp:
-                    json.dump(bl, fp, sort_keys=True, indent=4)
-                try:
-                    cl.cancelGroupInvitation(op.param1,[op.param3])
-                    cl.kickoutFromGroup(op.param1,[op.param2])
-                except:
+            try:
+                if op.param3 in bl['blacklist'] and op.param2 in bl['blacklist']:
+                    bl["blacklist"][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
+                    try:
+                        cl.cancelGroupInvitation(op.param1,[op.param3])
+                        cl.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        pass
+                if op.param3 in bl['blacklist'] and op.param2 in bl['blacklist']:
+                    bl["blacklist"][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
                     try:
                         ki.cancelGroupInvitation(op.param1,[op.param3])
                         ki.kickoutFromGroup(op.param1,[op.param2])
                     except:
-                        try:
-                             kk.cancelGroupInvitation(op.param1,[op.param3])
-                             kk.kickoutFromGroup(op.param1,[op.param2])
-                        except:
-                            try:
-                                kc.cancelGroupInvitation(op.param1,[op.param3])
-                                kc.kickoutFromGroup(op.param1,[op.param2])
-                            except:
-                                try:
-                                    ehun.cancelGroupInvitation(op.param1,[op.param3])
-                                    ehun.kickoutFromGroup(op.param1,[op.param2])
-                                except:
-                                    pass
-
+                        pass
+                if op.param3 in bl['blacklist'] and op.param2 in bl['blacklist']:
+                    bl["blacklist"][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
+                    try:
+                        kk.cancelGroupInvitation(op.param1,[op.param3])
+                        kk.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        pass
+                if op.param3 in bl['blacklist'] and op.param2 in bl['blacklist']:
+                    bl["blacklist"][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
+                    try:
+                        kc.cancelGroupInvitation(op.param1,[op.param3])
+                        kc.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        pass
+                if op.param3 in bl['blacklist'] and op.param2 in bl['blacklist']:
+                    bl["blacklist"][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
+                    try:
+                        ehun.cancelGroupInvitation(op.param1,[op.param3])
+                        ehun.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        pass
+            except:
+                pass
+# ==========PRO GROUP==============
         if op.type == 11:
             if wait["qr"] == True:
-                X = ehun.getGroup(op.param1).preventedJoinByTicket = False
+                X = random.choice(ABC).getGroup(op.param1).preventedJoinByTicket = False
                 if op.param2 not in Bots and op.param2 not in Creator and op.param2 not in admin:
-                    X = ehun.getGroup(op.param1)
+                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
+                    X = random.choice(ABC).getGroup(op.param1)
                     X.preventJoinByTicket = True
-                    ehun.updateGroup(X)
+                    random.choice(ABC).updateGroup(X)
                     bl["blacklist"][op.param2] = True
         if op.type == 13:
           if op.param2 not in Bots:
@@ -1171,8 +1186,8 @@ def ehunBot(op):
                     pass
               elif wait["inviteprotect"] == True:
                     bl["blacklist"][op.param2] = True
-                    cl.cancelGroupInvitation(op.param1,[op.param3])
-                    cl.kickoutFromGroup(op.param1,[op.param2])
+                    random.choice(ABC).cancelGroupInvitation(op.param1,[op.param3])
+                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                     pass
         if op.type == 17:
             if wait["protectjoin"] == True:
@@ -1182,7 +1197,7 @@ def ehunBot(op):
                     pass
                 else:
                     bl["blacklist"][op.param2] = True
-                    cl.kickoutFromGroup(op.param1,[op.param2])
+                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
                     pass
         if op.type == 32:
             if wait["protectcancel"] == True:
@@ -1193,9 +1208,9 @@ def ehunBot(op):
                 else:
                     bl["blacklist"][op.param2] = True
                     try:
-                        if op.param3 not in wait["blacklist"]:
-                            cl.kickoutFromGroup(op.param1,[op.param2])
-                            cl.inviteIntoGroup(op.param1,[op.param3])
+                        if op.param3 not in bl["blacklist"]:
+                            random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
+                            random.choice(ABC).inviteIntoGroup(op.param1,[op.param3])
                     except:
                         pass
         if op.type == 19:
@@ -1206,10 +1221,10 @@ def ehunBot(op):
                     pass
                 else:
                     bl["blacklist"][op.param2] = True
-                    cl.kickoutFromGroup(op.param1,[op.param2])
-                    cl.inviteIntoGroup(op.param1,[op.param3])
+                    random.choice(ABC).kickoutFromGroup(op.param1,[op.param2])
+                    random.choice(ABC).inviteIntoGroup(op.param1,[op.param3])
                     pass
-
+#=========BACUP B9TS=============
         if op.type == 32:
             if op.param3 in Bots:
                 if op.param2 in Bots:
@@ -1240,10 +1255,6 @@ def ehunBot(op):
                                     try:
                                         if op.param3 not in bl["blacklist"]:
                                             ehun.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
-                                            cl.acceptGroupInvitation(op.param1)
-                                            ki.acceptGroupInvitation(op.param1)
-                                            kk.acceptGroupInvitation(op.param1)
-                                            kc.acceptGroupInvitation(op.param1)
                                     except:
                                         pass
         if op.type == 32:
@@ -1301,7 +1312,7 @@ def ehunBot(op):
                                     kc.inviteIntoGroup(op.param1,[op.param3])
                                 except:
                                     pass
-
+# BOT BACKUP
         if op.type == 19:
             if op.param3 in Bots:
                 if op.param2 in Bots:
@@ -1315,27 +1326,138 @@ def ehunBot(op):
                         json.dump(bl, fp, sort_keys=True, indent=4)
                     try:
                         cl.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
+                        cl.kickoutFromGroup(op.param1,[op.param2])
                     except:
-                        try:
-                            ki.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
-                        except:
-                            try:
-                                kk.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
-                            except:
-                                try:
-                                    kc.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
-                                except:
-                                    try:
-                                        ehun.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
-                                        cl.acceptGroupInvitation(op.param1)
-                                        ki.acceptGroupInvitation(op.param1)
-                                        kk.acceptGroupInvitation(op.param1)
-                                        kc.acceptGroupInvitation(op.param1)
-                                    except:
-                                        pass
+                        pass
 
+                    G = cl.getGroup(op.param1)
+                    G.preventJoinByTicket = False
+                    cl.updateGroup(G)
+                    Ti = cl.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    G.preventJoinByTicket = True
+                    cl.updateGroup(G)
 
+        if op.type == 19:
+            if op.param3 in Bots:
+                if op.param2 in Bots:
+                    pass
+                if op.param2 in admin:
+                    pass
+                else:
+                    sendMention(op.param1, op.param2, "", " \nJangan Main Kik aja Boss")
+                    bl['blacklist'][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
+                    try:
+                        ki.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
+                        ki.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        pass
 
+                    G = ki.getGroup(op.param1)
+                    G.preventJoinByTicket = False
+                    ki.updateGroup(G)
+                    Ti = ki.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    G.preventJoinByTicket = True
+                    ki.updateGroup(G)
+
+        if op.type == 19:
+            if op.param3 in Bots:
+                if op.param2 in Bots:
+                    pass
+                if op.param2 in admin:
+                    pass
+                else:
+                    sendMention(op.param1, op.param2, "", " \nJangan Main Kik aja Boss")
+                    bl['blacklist'][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
+                    try:
+                        kk.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
+                        kk.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        pass
+
+                    G = kk.getGroup(op.param1)
+                    G.preventJoinByTicket = False
+                    kk.updateGroup(G)
+                    Ti = kk.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    G.preventJoinByTicket = True
+                    kk.updateGroup(G)
+
+        if op.type == 19:
+            if op.param3 in Bots:
+                if op.param2 in Bots:
+                    pass
+                if op.param2 in admin:
+                    pass
+                else:
+                    sendMention(op.param1, op.param2, "", " \nJangan Main Kik aja Boss")
+                    bl['blacklist'][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
+                    try:
+                        kc.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
+                        kc.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        pass
+
+                    G = kc.getGroup(op.param1)
+                    G.preventJoinByTicket = False
+                    kc.updateGroup(G)
+                    Ti = kc.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    G.preventJoinByTicket = True
+                    kc.updateGroup(G)
+
+        if op.type == 19:
+            if op.param3 in Bots:
+                if op.param2 in Bots:
+                    pass
+                if op.param2 in admin:
+                    pass
+                else:
+                    sendMention(op.param1, op.param2, "", " \nJangan Main Kik aja Boss")
+                    bl['blacklist'][op.param2] = True
+                    with open('bl.json', 'w') as fp:
+                        json.dump(bl, fp, sort_keys=True, indent=4)
+                    try:
+                        ehun.inviteIntoGroup(op.param1,[mid,Amid,Bmid,Cmid,Imid])
+                        ehun.kickoutFromGroup(op.param1,[op.param2])
+                    except:
+                        pass
+
+                    G = ehun.getGroup(op.param1)
+                    G.preventJoinByTicket = False
+                    ehun.updateGroup(G)
+                    Ti = ehun.reissueGroupTicket(op.param1)
+                    ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                    cl.acceptGroupInvitationByTicket(op.param1,Ti)
+                    ki.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kk.acceptGroupInvitationByTicket(op.param1,Ti)
+                    kc.acceptGroupInvitationByTicket(op.param1,Ti)
+                    G.preventJoinByTicket = True
+                    ehun.updateGroup(G)
+# ADMIN BACUP
         if op.type == 19:
             if op.param3 in admin:
                 if op.param2 in Bots:
@@ -2963,8 +3085,8 @@ def ehunBot(op):
 
                             elif text.lower() == 'botlink':
                               if msg._from in admin:
-                                  #url = LineClient()
-                                  mye = ehun.sendImageWithURL(msg.to,"line://au/q/")                                  
+                                  url = LineClient()
+                                  mye = ehun.sendImageWithURL(msg.to, url + "line://au/q/")
                                   ehun.sendMessage(msg.to,"Open this link " + mye + "\on your LINE forsmartphone in 2 minutes\n" + url)
                                   for s in mye:
                                       ehun.sendMessage(msg.to,"Token mu\n"+s.authToken)
@@ -3066,7 +3188,7 @@ def ehunBot(op):
                                            ehun.sendText(msg.to,"Sudah off")
 
                             elif "/ti/g/" in text.lower():
-                                   if settings["autoJoinTicket"] == True:
+                                   if wait["autoJoinTicket"] == True:
                                        link_re = re.compile('(?:line\:\/|line\.me\/R)\/ti\/g\/([a-zA-Z0-9_-]+)?')
                                        links = link_re.findall(text)
                                        n_links = []
