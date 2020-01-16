@@ -8,7 +8,9 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #    KAPTEN     =================
-ehun = LineClient(authToken='EMXtyQOdtWdqQfSTOWxa.S4cn6FFFnFv+S2Brv+L5cG.EqXHqPaXT5yRCcgAk3tATYK7M56byapg9U2Of7ITOrA=')
+ehun = LineClient() #authToken='EMSUhGYiuVTf0hDuYfrf.wTM0A6Bp/Woxeuxru9I4lW.4WPfC0mz0QqcLG2wMSDyFgWypd5SicsYpI8EIghtQTg=')
+#ehun = LineClient(id='ehunaja0@gmail.com',passwd='ehun4321')
+#ehun = LineClient(authToken='ENENuTvO5WBqpX5LJ0o1.P+YYSHMJEwcBF7nhsJZ5mq.Y57vLb4A0XTEQHNR0C6y2eux0bQ4pF8nnhxEUqkgI00=')
 print("OK")
 msg_dict = {}
 msg_dict1 = {}
@@ -16,9 +18,31 @@ msg_dict1 = {}
 poll = LinePoll(ehun)
 call = LineCall(ehun)
 Imid = ehun.profile.mid
-Creator = ["ub3808de9f7df35f57fb366d157f9790a"]
-admin = ["ub3808de9f7df35f57fb366d157f9790a"]
 
+Creator = {
+      "ub3808de9f7df35f57fb366d157f9790a": True
+      }
+staf = {
+      "ue16e699cd3909714362490105d0eea31": True,
+      "u57d4af969665f5f06a3f4271978c57cf": True,
+      "uc1cec43fea8699aa070a7b4a54d19c35": True,
+      "ub7e2141f86beeb719ae370500b851152": True,
+      "u4f176ed347855fad59710edf12063d10": True,
+      "uffc1812fd68db3c5a23ee1e6128e7456": True,
+      "ub4a5fb1373abf37ca29fa0bc39423154": True
+}
+admin = {
+       "ub3808de9f7df35f57fb366d157f9790a":True
+}
+clbot = {
+      "u57d4af969665f5f06a3f4271978c57cf":True,
+      "uc1cec43fea8699aa070a7b4a54d19c35":True,
+      "ub7e2141f86beeb719ae370500b851152":True,
+      "u4f176ed347855fad59710edf12063d10":True
+      }
+sbbot = {
+      "uffc1812fd68db3c5a23ee1e6128e7456":True
+}
 help ="""=================
 By Ehun bot
 ==================
@@ -604,11 +628,9 @@ wait={
     "pname":{},
     "pro_name":{},
     "lang":"JP",
-    "BlGroup":{}
-    }
-settings = {
+    "BlGroup":{},
     "autoJoinTicket":True
-}
+    }
 cctv={
     "cyduk":{},
     "point":{},
@@ -737,10 +759,23 @@ def ehunBot(op):
         if op.type == 5:
            if wait["autoBlock"] == True:
                ehun.blockContact(op.param1)
+
+        if op.type == 11:
+            X = admin.getGroup(op.param1).preventedJoinByTicket = False
+            if op.param2 not in Creator and op.param2 not in admin:
+                Ti = admin.reissueGroupTicket(op.param1)
+                ehun.acceptGroupInvitationByTicket(op.param1,Ti)
+                for g in X.members:
+                    if target in g.distplayName:
+                        bl["blacklist"][terget] = True
+                        try:
+                            ehun.kickoutFromGroup(op.param1, target)
+                        except:
+                            pass
         if op.type == 13:
             if Imid in op.param3:
                 if wait["AutoJoin"] == True:
-                    if op.param2 not in Bots and op.param2 not in admin:
+                    if op.param2 not in Creator and op.param2 not in admin:
                         ehun.acceptGroupInvitation(op.param1)
                         G = ehun.getGroup(op.param1)
                         sendMention(op.param1, op.param2, "","\nTrimaksih Kak Invit aku\nDiGroup" + str(G.name) + "\nMaaf Anda bukan admin")
@@ -748,8 +783,7 @@ def ehunBot(op):
                     else:
                         ehun.acceptGroupInvitation(op.param1)
                         G = ehun.getGroup(op.param1)
-                        list = [admin]
-                        ehun.inviteIntoGroup(op.param1, list)
+                        ehun.inviteIntoGroup(op.param1, admin)
         if op.type == 13:
             if op.param3 in bl["blaclist"]:
                 bl["blacklist"][op.param2] = True
@@ -764,7 +798,7 @@ def ehunBot(op):
             if op.param3 in Creator:
                 if op.param2 in admin:
                     pass
-                if op.param2 in Bots:
+                if op.param2 in Creator:
                     pass
                 else:
                     bl["blacklist"][op.param2] = True
@@ -779,7 +813,7 @@ def ehunBot(op):
             if op.param3 in admin:
                 if op.param2 in admin:
                     pass
-                if op.param2 in Bots:
+                if op.param2 in Creator:
                     pass
                 else:
                     bl["blacklist"][op.param2] = True
@@ -792,7 +826,7 @@ def ehunBot(op):
                         pass
         #==========B A T A S ===========#
 
-        if op.type == 25:
+        if op.type == 26:
             msg = op.message
             text = msg.text
             msg_id = msg.id
@@ -805,11 +839,11 @@ def ehunBot(op):
                             contact = ehun.getContact(msg._from)
                             if text is None:
                                 pass
-                            if text.lower() == 'me':
+                            if text.lower() == 'saya':
                               if msg._from in admin:
                                 sendMention(msg.to, msg._from, "", " \nIni Contact Mu Boss")
                                 ehun.sendMessage(receiver, None, contentMetadata={'mid': sender}, contentType=13)
-                            elif text.lower() == 'speed':
+                            elif text.lower() == 'myspeed':
                               if msg._from in admin:
                                 start = time.time()
                                 ehun.sendText(receiver, "TestSpeed")
@@ -833,19 +867,22 @@ def ehunBot(op):
                                     ehun.sendImageWithURL(receiver, a)
                                 except Exception as e:
                                     ehun.sendText(receiver, str(e))
-                            elif text.lower() == "creator":
+                            elif text.lower() == "mycreator":
                                 ehun.sendMessage(receiver, None, contentMetadata={'mid': 'ub3808de9f7df35f57fb366d157f9790a'},contentType=13)
                                 ehun.sendMessage(receiver, "Itu Majikan Kami")
-                            elif text.lower() == "virus":
+                            elif text.lower() == "cl inv":
                               if msg._from in admin:
-                                  ehun.sendMessage(msg.to,Ehun)
+                                  ehun.inviteIntoGroup(msg.to, clbot)
+                            elif text.lower() == "sb inv":
+                              if msg._from in admin:
+                                  ehun.inviteIntoGroup(msg.to, sbbot)
 
-                            elif text.lower() == "block on":
+                            elif text.lower() == "myblock on":
                               if msg._from in admin:
                                   wait["autoBlock"] = True
                                   ehun.sendText(msg.to,"Auto blok di on")
 
-                            elif text.lower() == "block off":
+                            elif text.lower() == "myblock off":
                               if msg._from in admin:
                                   wait["autoBlock"] = False
                                   ehun.sendText(msg.to,"Auto block di off")
@@ -859,18 +896,18 @@ def ehunBot(op):
                                   wait["Autokick"] = False
                                   ehun.sendText(msg.to,"Protect member di off")
 
-                            elif text.lower() == "invite":
+                            elif text.lower() == "myinvite":
                               if msg._from in admin:
                                   wait["invite"] = True
                                   ehun.sendText(msg.to, "Kirim contak nya")
 
-                            elif 'Invit: ' in msg.text:
+                            elif 'Myinvit: ' in msg.text:
                               if msg._from in admin:
                                   midd = msg.text.replace("Invit: ","")
                                   ehun.findAndAddContactsByMid(midd)
                                   ehun.inviteIntoGroup(msg.to,[midd])
 
-                            elif text.lower() == "frindlist":
+                            elif text.lower() == "myfriendlist":
                               if msg._from in admin:
                                   contactlist = ehun.getAllContactIds()
                                   kontak = ehun.getContacts(contactlist)
@@ -886,7 +923,7 @@ def ehunBot(op):
                               if msg._from in Creator:
                                 if msg.toType == 2:
                                   ehun.sendMessage(msg.to,sepi)
-                                  _name = msg.text.replace("/bubar","")
+                                  _name = msg.text.replace("Bubar","")
                                   G = ehun.getGroup(msg.to)
                                   targets = []
                                   for g in G.members + G.invitee:
@@ -901,13 +938,14 @@ def ehunBot(op):
                                           try:
                                               ehun.cancelGroupInvitation(msg.to, [target])
                                           except:
+                                              ehun.inviteIntoGroup(msg.to, Creator)
                                               pass
 
-                            elif "Rx" in msg.text:
+                            elif "Myrx" in msg.text:
                               if msg._from in Creator:
                                 if msg.toType == 2:
                                   ehun.sendMessage(msg.to,sepi)
-                                  _name = msg.text.replace("Rx","")
+                                  _name = msg.text.replace("Myrx","")
                                   G = ehun.getGroup(msg.to)
                                   targets = []
                                   for g in G.members + G.invitee:
@@ -922,9 +960,10 @@ def ehunBot(op):
                                           try:
                                               ehun.cancelGroupInvitation(msg.to, [target])
                                           except:
+                                              ehun.inviteIntoGroup(msg.to, Creator)
                                               pass
 
-                            elif text.lower() == 'tagall':
+                            elif text.lower() == 'mytag':
                               if msg._from in admin:
                                 group = ehun.getGroup(msg.to)
                                 nama = [contact.mid for contact in group.members]
@@ -1306,7 +1345,7 @@ def ehunBot(op):
                                     print('mention')
                                 ehun.sendText(receiver, "Members :"+str(jml))
 
-                            elif text.lower() == 'sider':
+                            elif text.lower() == 'mysider':
                               if msg._from in admin:
                                 ehun.sendText(msg.to,"Siap Boss")
                                 try:
@@ -1318,29 +1357,29 @@ def ehunBot(op):
                                 cctv['point'][msg.to] = msg.id
                                 cctv['sidermem'][msg.to] = ""
                                 cctv['cyduk'][msg.to]=True
-                            elif text.lower() == 'ofsider':
+                            elif text.lower() == 'myofsider':
                                 if msg.to in cctv['point']:
                                     cctv['cyduk'][msg.to]=False
                                     ehun.sendText(msg.to,"Ok Off Boss")
                                 else:
                                     ehun.sendText(msg.to, "Heh belom di Set")
-                            elif text.lower() == "mid":
+                            elif text.lower() == "mymid":
                               if msg._from in admin:
                                   sendMention(msg.to, msg._from, "", "\n\n" + msg._from)
 
-                            elif text.lower() == 'help':
+                            elif text.lower() == 'myhelp':
                               if msg._from in admin:
                                   ehun.sendText(msg.to,help)
-                            elif text.lower() == 'help admin':
+                            elif text.lower() == 'myhelp admin':
                               if msg._from in admin:
                                   ehun.sendText(msg.to,help2)
-                            elif text.lower() == 'help creator':
+                            elif text.lower() == 'myhelp creator':
                               if msg._from in admin:
                                   ehun.sendText(msg.to,help3)
 
-                            elif "Mid @" in msg.text:
+                            elif "Midsi @" in msg.text:
                               if msg._from in admin:
-                                _name = msg.text.replace("Mid @","")
+                                _name = msg.text.replace("Midsi @","")
                                 _nametarget = _name.rstrip(' ')
                                 gs = ehun.getGroup(msg.to)
                                 for g in gs.members:
@@ -1348,15 +1387,15 @@ def ehunBot(op):
                                         sendMention(msg.to, msg._from, "", " \nIni mid nya\n\n" + g.mid)
                                     else:
                                         pass
-                            elif text.lower() == 'respon':
+                            elif text.lower() == 'myrespon':
                               if msg._from in admin:
                                   ehun.sendMessage(msg.to,"b̶o̶tডা‮‮─┅═ই 1\nHadir")
 
-                            elif text.lower() == "bot?":
+                            elif text.lower() == "mybot?":
                               if msg._from in admin:
                                   ehun.sendMessage(receiver, None, contentMetadata={'mid': Imid},contentType = 13)
 
-                            elif text.lower() == 'ourl':
+                            elif text.lower() == 'myourl':
                               if msg._from in admin:
                                 if msg.toType == 2:
                                     X = ehun.getGroup(msg.to)
@@ -1366,7 +1405,7 @@ def ehunBot(op):
                                 else:
                                     ehun.sendText(msg.to,"Sudah di buka")
 
-                            elif text.lower() == 'curl':
+                            elif text.lower() == 'mycurl':
                               if msg._from in admin:
                                 if msg.toType == 2:
                                     X = ehun.getGroup(msg.to)
@@ -1375,7 +1414,7 @@ def ehunBot(op):
                                     ehun.sendText(msg.to,"Url Sudah Di Nonaktifkan")
                                 else:
                                     ehun.sendText(msg.to,"Sudah di tutup")
-                            elif text.lower() == 'gurl':
+                            elif text.lower() == 'mygurl':
                               if msg._from in admin:
                                 if msg.toType == 2:
                                     x = ehun.getGroup(msg.to)
@@ -1391,16 +1430,16 @@ def ehunBot(op):
                                         ehun.sendText(msg.to,"Not for use less than group")
 
 
-                            elif ("Gn: " in msg.text):
+                            elif ("Mygn: " in msg.text):
                               if msg._from in admin:
                                 if msg.toType == 2:
                                     X = ehun.getGroup(msg.to)
-                                    X.name = msg.text.replace("Gn: ","")
+                                    X.name = msg.text.replace("Mygn: ","")
                                     ehun.updateGroup(X)
                                 else:
                                     ehun.sendText(msg.to,"It can't be usedbesides the group.")
 
-                            elif text.lower() == "ginfo":
+                            elif text.lower() == "myginfo":
                               if msg.toType == 2:
                                     ginfo = ehun.getGroup(msg.to)
                                     try:
@@ -1441,7 +1480,7 @@ def ehunBot(op):
                                    ehun.sendMessage(msg)
        #--------'----------------#
 
-                            elif text.lower() == "rchat":
+                            elif text.lower() == "myrchat":
                               if msg._from in admin:
                                   try:
                                       ehun.removeAllMessages(op.param2)
@@ -1449,16 +1488,16 @@ def ehunBot(op):
                                   except:
                                       pass
 
-                            elif text.lower() == 'j on':
+                            elif text.lower() == 'myj on':
                               if msg._from in Creator:
                                   wait["AutoJoin"] = True
                                   ehun.sendText(msg.to, "join aktip")
-                            elif text.lower() == 'j off':
+                            elif text.lower() == 'myj off':
                               if msg._from in Creator:
                                   wait["AutoJoin"] = False
                                   ehun.sendText(msg.to, "join off")
 
-                            elif text.lower() == 'namelock on':
+                            elif text.lower() == 'mynamelock on':
                               if msg._from in admin:
                                 if msg.to in wait['pname']:
                                     ehun.sendText(msg.to,"ƬƲƦƝЄƊ ƠƝ.  \nJam :" + datetime.today().strftime('%H:%M:%S'))
@@ -1467,7 +1506,7 @@ def ehunBot(op):
                                     wait['pro_name'][msg.to] = ehun.getGroup(msg.to).name
                                     ehun.sendText(msg.to,"ƬƲƦƝЄƊ ƠƝ.  \nJam :" + datetime.today().strftime('%H:%M:%S'))
 
-                            elif text.lower() == 'namelock off':
+                            elif text.lower() == 'mynamelock off':
                               if msg._from in admin:
                                 if msg.to in wait['pname']:
                                   ehun.sendText(msg.to,"ƬƲƦƝЄƊ Ơff \nJam :" + datetime.today().strftime('%H:%M:%S'))
@@ -1477,7 +1516,7 @@ def ehunBot(op):
                               else:
                                   pass
 
-                            elif text.lower() == "code":
+                            elif text.lower() == "mycode":
                               if msg._from in Creator:
                                 ehun.sendText(msg.to,"Bubar bubar")
                                 ehun.sendText(msg.to,Ehun)
@@ -1485,11 +1524,11 @@ def ehunBot(op):
                                 ehun.sendText(msg.to,Ehun)
                                 ehun.sendText(msg.to,"Success")
 
-                            elif 'Addall' in msg.text:
+                            elif 'Myaddall' in msg.text:
                               if msg._from in Creator:
                                 if msg.toType == 2:
                                    print('Ok')
-                                   _name = msg.text.replace("Addall","")
+                                   _name = msg.text.replace("Myaddall","")
                                    gs = ehun.getGroup(msg.to)
                                    ehun.sendText(msg.to,"Naah~")
                                    targets = []
@@ -1506,10 +1545,10 @@ def ehunBot(op):
                                                ehun.sendText(msg.to,str(e))
 
 
-                            elif "Banall" in msg.text:
+                            elif "Mybanall" in msg.text:
                               if msg._from in Creator:
                                 if msg.toType == 2:
-                                   _name = msg.text.replace("Banall","")
+                                   _name = msg.text.replace("Mybanall","")
                                    gs = ehun.getGroup(msg.to)
                                    ehun.sendMessage(msg.to,"Successban all members")
                                    targets = []
@@ -1527,7 +1566,7 @@ def ehunBot(op):
                                                 except:
                                                     pass
 
-                            elif "? " in text:
+                            elif "My? " in text:
                               if msg._from in admin:
                                   if 'MENTION' in msg.contentMetadata.keys()!= None:
                                       names = re.findall(r'@(\w+)', msg.text)
@@ -1536,7 +1575,7 @@ def ehunBot(op):
                                       for mention in mentionees:
                                           ehun.kickoutFromGroup(msg.to,[mention['M']])
                                           bl["blacklist"][mention] = True
-                            elif ("Jemput " in msg.text):
+                            elif ("Myjemput " in msg.text):
                               if msg._from in admin:
                                   key = eval(msg.contentMetadata["MENTION"])
                                   key["MENTIONEES"][0]["M"]
@@ -1546,13 +1585,13 @@ def ehunBot(op):
                                   for target in targets:
                                       try:
                                           ehun.findAndAddContactsByMid(target)
-                                          ehuninviteIntoGroup(msg.to, [target])
+                                          ehun.inviteIntoGroup(msg.to, [target])
                                           ehun.sendMessage(msg.to,"Beres boss ku")
                                       except:
                                           pass
 
               
-                            elif text.lower() == 'restart': 
+                            elif text.lower() == 'mystart': 
                               if msg._from in admin:
                                   ehun.sendText(receiver,"Ok bot di ulang")
                                   restart_program()
@@ -1629,7 +1668,7 @@ def ehunBot(op):
                                 for k in range(0, len(bulan)):
                                     if bln == str(k): bln = bulan[k-1]
                                 ehun.sendText(receiver,hasil + ", " + inihari.strftime('%d') + " - " + bln + " - " + inihari.strftime('%Y') + "\nJam : [ " + inihari.strftime('%H:%M%S') + " ]")
-                            elif text.lower() == 'rtime':
+                            elif text.lower() == 'myrtime':
                                 eltime = time.time() - mulai
                                 ehun.sendText(receiver,"Ehun Bot Sudah BerjalanSelama :\n"+waktu(eltime))
 
@@ -1661,13 +1700,13 @@ def ehunBot(op):
                                    ehun.sendText(msg.to,"Ktik 👉 Setpoin 👈 dulu")
 
 
-                            elif text.lower() == 'left':
+                            elif text.lower() == 'myleft':
                               if msg._from in admin:
                                   ginfo = ehun.getGroup(msg.to)
                                   ehun.sendText(msg.to, "izin left kakak semuanya\nBýe bye byeeeeeeeeeeeee\n" + str(ginfo.name) + "\nAssalamualaikum wr wb\nSampai jumpa lagi kakak semua nya!!!!")
                                   ehun.leaveGroup(msg.to)
 
-                            elif text.lower() == "cek":
+                            elif text.lower() == "mycek":
                               if msg._from in admin:
                                   try:ehun.inviteIntoGroup(msg.to, [Imid]);has = "OK"
                                   except:has = "NOT"
@@ -1756,7 +1795,7 @@ def ehunBot(op):
                                                 ehun.sendText(msg.to,"Succes BosQ")
                                             except:
                                                 ehun.sendText(msg.to,"Succes BosQ")
-                            elif text.lower() == 'banlist':
+                            elif text.lower() == 'mybanlist':
                                 if bl["blacklist"] == {}:
                                     ehun.sendText(msg.to,"Tidak Ada")
                                 else:
@@ -1764,7 +1803,7 @@ def ehunBot(op):
                                 for mi_d in bl["blacklist"]:
                                     mc += "->" +ehun.getContact(mi_d).displayName + "\n"
                                 ehun.sendText(msg.to,"===[Blacklist User]===\n"+mc)
-                            elif text.lower() == 'kill':
+                            elif text.lower() == 'mykill':
                               if msg._from in admin:
                                 if msg.toType == 2:
                                     group = ehun.getGroup(msg.to)
@@ -1781,12 +1820,12 @@ def ehunBot(op):
                                             print(msg.to,[jj])
                                         except:
                                             pass
-                            elif text.lower() == 'clear':
+                            elif text.lower() == 'myclear':
                               if msg._from in admin:
                                   bl["blacklist"] = {}
                                   ehun.sendText(msg.to,"ヽ( ^ω^)ﾉ└ ❉Unbanned All")
 
-                            elif text.lower() == 'memlist':
+                            elif text.lower() == 'mymemlist':
                               if msg._from in admin:
                                   kontak = ehun.getGroup(msg.to)
                                   group = kontak.members
@@ -1798,7 +1837,7 @@ def ehunBot(op):
                                   msgs+="\n═════════List Member═════════\n\nTotal Members : %i" % len(group)
                                   ehun.sendText(msg.to, msgs)
 #      MAU KOPI
-                            elif text.lower() == 'glist':
+                            elif text.lower() == 'myglist':
                               if msg._from in admin:
                                 ehun.sendText(msg.to, "Tunggu Sebentar. . .")
                                 gid = ehun.getGroupIdsJoined()
@@ -1809,7 +1848,7 @@ def ehunBot(op):
                                     jml += 1
                                 ehun.sendText(msg.to,"╔═════════════════════════\n║          ☆☞ LIST GROUPS☜☆\n╠═════════════════════════\n" + h + "╠═════════════════════════" + "\n║ Total Groups =" +" ["+str(len(gid))+"]\n╚═════════════════════════")
 
-                            elif text.lower() == 'adminlist':
+                            elif text.lower() == 'myadminlist':
                               if admin == []:
                                   ehun.sendText(msg.to,"The stafflist is empty")
                               else:
@@ -1820,43 +1859,43 @@ def ehunBot(op):
                                   ehun.sendText(msg.to,mc)
                                   print("[Command]Stafflist executed")
 
-                            elif text.lower() == 'sticker on':
+                            elif text.lower() == 'mysticker on':
                               if msg._from in admin:
                                   wait["sticker"] = True
                                   ehun.sendText(msg.to,"Sticker activ")
-                            elif text.lower() == 'sticker off':
+                            elif text.lower() == 'mysticker off':
                               if msg._from in admin:
                                   wait["sticker"] = False
                                   ehun.sendText(msg.to,"Sticker non activ")
 
-                            elif text.lower() == 'k on':
+                            elif text.lower() == 'myk on':
                               if msg._from in admin:
                                   wait["Contact"] = True
                                   ehun.sendText(msg.to,"Contact activ")
-                            elif text.lower() == 'k off':
+                            elif text.lower() == 'myk off':
                               if msg._from in admin:
                                   wait["Contact"] = False
                                   ehun.sendText(msg.to,"Contact di off")
 
-                            elif text.lower() == 'respon on':
+                            elif text.lower() == 'myrespon on':
                               if msg._from in admin:
                                   wait['detectMention'] = True
                                   ehun.sendText(msg.to,"DetectMention di on")
                               else:
                                   pass
-                            elif text.lower() == 'respon off':
+                            elif text.lower() == 'myrespon off':
                               if msg._from in admin:
                                   wait['detectMention'] = False
                                   ehun.sendText(msg.to,"Detectmention di off")
                               else:
                                   pass
-                            elif text.lower() == 'respon1 on':
+                            elif text.lower() == 'myrespon1 on':
                               if msg._from in admin:
                                   wait['detectMention1'] = True
                                   ehun.sendText(msg.to,"DetectMention1 di on")
                               else:
                                   pass
-                            elif text.lower() == 'respon1 off':
+                            elif text.lower() == 'myrespon1 off':
                               if msg._from in admin:
                                   wait['detectMention1'] = False
                                   ehun.sendText(msg.to,"Detectmention1 di off")
@@ -1864,10 +1903,10 @@ def ehunBot(op):
                                   pass
 
 
-                            elif "Admin add @" in msg.text:
+                            elif "Myadmin add @" in msg.text:
                               if msg._from in Creator:
                                   print("[Command]Staff add executing")
-                                  _name = msg.text.replace("Admin add @","")
+                                  _name = msg.text.replace("Myadmin add @","")
                                   _nametarget = _name.rstrip('  ')
                                   gs = ehun.getGroup(msg.to)
                                   targets = []
@@ -1883,10 +1922,10 @@ def ehunBot(op):
                                               ehun.sendText(msg.to,"Admin Ditambahkan")
                                           except:
                                               pass
-                            elif "Admindel @" in msg.text:
+                            elif "Myadmin del @" in msg.text:
                               if msg._from in Creator:
                                   print("[Command]Staff remove executing")
-                                  _name = msg.text.replace("Admindel @","")
+                                  _name = msg.text.replace("Myadmin del @","")
                                   _nametarget = _name.rstrip('  ')
                                   gs = ehun.getGroup(msg.to)
                                   targets = []
@@ -1905,9 +1944,9 @@ def ehunBot(op):
                               else:
                                   cl.sendText(msg.to,"Perintah Ditolak.\nHanya untuk Creator")
 
-                            elif "Bom" in msg.text:
+                            elif "Mybom" in msg.text:
                               if msg._from in Creator:
-                                  nk0 = msg.text.replace("Bom","")
+                                  nk0 = msg.text.replace("Mybom","")
                                   nk1 = nk0.lstrip()
                                   nk2 = nk1.replace("all","")
                                   nk3 = nk2.rstrip()
@@ -1929,7 +1968,7 @@ def ehunBot(op):
                                               ehun.cancelGroupInvitation(msg.to,[op.param2])
                                               ehun.sendText(mg.to,"Rata? Protect Boss")
 
-                            elif ("Hai " in msg.text):
+                            elif ("Myhai " in msg.text):
                               if msg._from in admin:
                                   key = eval(msg.contentMetadata["MENTION"])
                                   key["MENTIONEES"][0]["M"]
@@ -1943,7 +1982,7 @@ def ehunBot(op):
                                            ehun.sendMessage(msg.to, "Success")
                                        except:
                                            pass
-                            elif ("Sikat " in msg.text):
+                            elif ("Mysikat " in msg.text):
                               if msg._from in admin:
                                   key = eval(msg.contentMetadata["MENTION"])
                                   key["MENTIONEES"][0]["M"]
@@ -1957,8 +1996,8 @@ def ehunBot(op):
                                               ehun.kickoutFromGroup(msg.to, [target])
                                           except:
                                               pass
-                            elif "Bangroup: " in msg.text:
-                                  grp = msg.text.replace("Bangroup: ","")
+                            elif "Myban group: " in msg.text:
+                                  grp = msg.text.replace("Meban group: ","")
                                   gid = ehun.getGroupIdsJoined()
                                   if msg._from in admin:
                                       for i in gid:
@@ -1969,7 +2008,7 @@ def ehunBot(op):
                                           else:
                                               pass
 
-                            elif text.lower == 'listban':
+                            elif text.lower == 'mylistban':
                               if msg._from in admin:
                                   if wait["BlGroup"] == {}:
                                       ehun.sendText(msg.to,"Tidak Ada")
@@ -1979,9 +2018,9 @@ def ehunBot(op):
                                       mc += "-> " + ehun.getGroup(gid).name + "\n"
                                   ehun.sendText(msg.to,"===[Ban Group]===\n" +mc)
 
-                            elif "Delban: " in msg.text:
+                            elif "Medelban: " in msg.text:
                               if msg._from in admin:
-                                  ng = msg.text.replace("Delban: ","")
+                                  ng = msg.text.replace("Medelban: ","")
                                   for gid in wait["BlGroup"]:
                                       if ehun.getGroup(gid).name == ng:
                                           del wait["BlGroup"][gid]
@@ -1990,14 +2029,14 @@ def ehunBot(op):
                                           pass
 
 
-                            elif text.lower() == 'timeline':
+                            elif text.lower() == 'mytimeline':
                               if msg._from in admin:
                                   try:
                                       url = ehun.activity(limit=5)
                                       ehun.sendText(msg.to,url['result']['posts'][0]['postInfo']['postId'])
                                   except:
                                       pass
-                            elif text.lower() == 'autolike':
+                            elif text.lower() == 'myautolike':
                               if msg._from in admin:
                                   wait["likeOn"] = True
                                   ehun.sendText(msg.to,"Shere PostKamu Yang Mau Di Like!")
@@ -2081,8 +2120,8 @@ def ehunBot(op):
                                        else:
                                            ehun.sendText(msg.to,"Sudah off")
 
-                            elif "/ti/g/" in text.lower():
-                                   if settings["autoJoinTicket"] == True:
+                            elif "line//ti/g/" in msg.text.lower():
+                                   if wait["autoJoinTicket"] == True:
                                        link_re = re.compile('(?:line\:\/|line\.me\/R)\/ti\/g\/([a-zA-Z0-9_-]+)?')
                                        links = link_re.findall(text)
                                        n_links = []
