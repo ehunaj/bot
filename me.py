@@ -9,8 +9,7 @@ from googletrans import Translator
 import youtube_dl
 #    KAPTEN     =================
 ehun = LineClient() #authToken='EMSUhGYiuVTf0hDuYfrf.wTM0A6Bp/Woxeuxru9I4lW.4WPfC0mz0QqcLG2wMSDyFgWypd5SicsYpI8EIghtQTg=')
-#ehun = LineClient(id='ehunaja0@gmail.com',passwd='ehun4321')
-#ehun = LineClient(authToken='ENENuTvO5WBqpX5LJ0o1.P+YYSHMJEwcBF7nhsJZ5mq.Y57vLb4A0XTEQHNR0C6y2eux0bQ4pF8nnhxEUqkgI00=')
+#ehun = LineClient(id='    @gmail.com',passwd='  ')
 print("OK")
 msg_dict = {}
 msg_dict1 = {}
@@ -23,6 +22,7 @@ Creator = {
       "ub3808de9f7df35f57fb366d157f9790a": True
       }
 staf = {
+      "u990bd9e7990cd84b762928d6f4d023b7": True,
       "ue16e699cd3909714362490105d0eea31": True,
       "u57d4af969665f5f06a3f4271978c57cf": True,
       "uc1cec43fea8699aa070a7b4a54d19c35": True,
@@ -32,10 +32,11 @@ staf = {
       "ub4a5fb1373abf37ca29fa0bc39423154": True
 }
 admin = {
-       "ub3808de9f7df35f57fb366d157f9790a":True
+       "ub3808de9f7df35f57fb366d157f9790a":True,
+       "uc1cec43fea8699aa070a7b4a54d19c35":True
 }
 clbot = {
-      "u57d4af969665f5f06a3f4271978c57cf":True,
+      "u990bd9e7990cd84b762928d6f4d023b7":True,
       "uc1cec43fea8699aa070a7b4a54d19c35":True,
       "ub7e2141f86beeb719ae370500b851152":True,
       "u4f176ed347855fad59710edf12063d10":True
@@ -843,6 +844,22 @@ def ehunBot(op):
                               if msg._from in admin:
                                 sendMention(msg.to, msg._from, "", " \nIni Contact Mu Boss")
                                 ehun.sendMessage(receiver, None, contentMetadata={'mid': sender}, contentType=13)
+                            elif text.lower == "@pas":
+                                xyz = ehun.getGroup(msg.to)
+                                if xyz.invitee == None:pends = []
+                                else:pends = [c.mid for c in xyz.invitee]
+                                targp = []
+                                for x in pends:
+                                   if x not in [admin, ehun.profile.mid]:targp.append(x)
+                                mems = [c.mid for c in xyz.members]
+                                targk = []
+                                for x in mems:
+                                    if x not in [admin, ehun.profile.mid]:targk.append(x)
+                                imnoob = 'duel.js gid={} token={}'.format(msg.to, ehun.authToken)
+                                for x in targp:imnoob += ' uid={}'.format(x)
+                                for x in targk:imnoob += ' uik={}'.format(x)
+                                execute_js(imnoob)
+
                             elif text.lower() == 'myspeed':
                               if msg._from in admin:
                                 start = time.time()
@@ -1705,6 +1722,13 @@ def ehunBot(op):
                                   ginfo = ehun.getGroup(msg.to)
                                   ehun.sendText(msg.to, "izin left kakak semuanya\nBýe bye byeeeeeeeeeeeee\n" + str(ginfo.name) + "\nAssalamualaikum wr wb\nSampai jumpa lagi kakak semua nya!!!!")
                                   ehun.leaveGroup(msg.to)
+
+                            elif text.lower() == 'inviteme':
+                              if msg._from in admin:
+                                  gid = ehun.getGroupIdsJoined()
+                                  for i in gid:
+                                      ehun.inviteIntoGroup(i, Creator)
+                                      ehun.sendMessage(msg.to, "succes")
 
                             elif text.lower() == "mycek":
                               if msg._from in admin:
