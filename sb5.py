@@ -8,46 +8,37 @@ from bs4 import BeautifulSoup
 from googletrans import Translator
 import youtube_dl
 #    KAPTEN     =================
-#cl = LineClient(id='ehun517@gmail.com',passwd='ehun4321')
 
 #cl = LineClient()
 cl = LineClient(authToken='ENvLEuuZSEPB5jcXBrN4.wOkmirNWe41AVCDdjgw/za.OxD5+rSwCmyNiIBCkkcz2kXIrhNniUxjhq3Aama6SlI=')
-#ki = LineClient(id='ehun56@gmail.com',passwd='ehun4321')
+#ki = LineClient(id=' @gmail.com',passwd='passwd')
 
 #ki = LineClient()
 ki = LineClient(authToken='ENmpbm60AnE1XYUcB7ne.pYxjKbe7w+1iIyyJvihN7G.uGAfkzg7UuhYpBJWoKfHVxxf42LfbBubluPrOxb2ItY=')
 #ki = LineClient(id='   @gmail.com',passwd='passwd mu')
-#kk = LineClient(id='nrsfamil1@gmail.com',passwd='ehun4321')
 
 #kk = LineClient()
 kk = LineClient(authToken='END9Ns0GFh1wCnRnfbX1.RNY0mD5hMgMbcfE1tEAyWq.T2rPkFKGIFzV487nXFsNBsDUzZNNVtZgF+05EZ2nvzk=')
 #kk = LineClient(id='   @gmail.com',passwd='passwd mu')
-#kc = LineClient(id='ehunaj@gmail.com',passwd='ehun4321')
+
 
 #kc = LineClient()
 kc = LineClient(authToken='ENQ0U8VRPWAzlqrwbiQ4.BvIR7Jw9VfAdsJzU/uMhba.DGszmfI94EtZOAi1PTo37jxAVOxrNos3svGI6DPTvno=')
 #kc = LineClient(id='   @gmail.com',passwd='passwd mu')
-#kd = LineClient(id='ehunaj1@gmail.com',passwd='ehun4321')
 
 #kd = LineClient()
 kd = LineClient(authToken='ENYinVbWzuJn4spo902d.bNThAn2m83UdWG0//5YwNq.pJKJdGLIe5vA7qepGEcveWYsT02RI1klNEqYYvB7jmM=')
 #kd = LineClient(id='   @gmail.com',passwd='passwd mu')
-#ke = LineClient(id='ehunaj2@gmail.com',passwd='ehun4321')
 
 #ke = LineClient()
 ke = LineClient(authToken='ENaOZughlxUDp0RMBg36.vhtDt1ZY7ZUxmzctnb3zTG.A53D8k0vkNoxU7JF2zLYTCSxBeoMkWXrkZB1sPbUHPY=')
 #ke = LineClient(id='   @gmail.com',passwd='passwd mu')
 
 s1 = LineClient(authToken='EN7ytt6EH97u00PNspA1.U4Mzj8TUJ1y+fkFO73MYiq.RDKAkypr+aSAfmB1a9Wt5ZrW7TUaO4VYMg/TrWUFlhc=')
-#s1 = LineClient(id='ehunaj3@gmail.com',passwd='ehun4321')
 
 s2 = LineClient(authToken='ENK5pwMHkOnOFoPbQla1.Z2jkQwGakxweNIuIsU0aCq.SoODfdUBbigpvdSgZK7sz9oSmkHd0v7MdAHeXTHNv8o=')
-#s2 = LineClient(id='ehunaj4@gmail.com',passwd='ehun4321')
 
 s3 = LineClient(authToken='ENGKBK4If8XdftknMIrb.Tj3/RJgOGm3n0NS61mh+wW.AFv5tsd3QIKga8RlZ4itMIjudvImax1I+88h5bLt+d8=')
-#s3 = LineClient(id='ehunaj5@gmail.com',passwd='ehun4321')
-
-#ehun = LineClient(id='ehunaja6@gmail.com',passwd='ehun4321')
 #ehun = LineClient()
 ehun = LineClient(authToken='ENhO0vrJXOLTqtQx8dF6.+8gbl9AnS8wIpUhMeO50vG.E9Z2cfu/tIrPeNAnHYdbe/csdng20DtHaWEDPgeA2pM=')
 #ehun = LineClient(id='   @gmail.com',passwd='passwd mu')
