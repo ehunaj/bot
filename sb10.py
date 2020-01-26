@@ -308,8 +308,7 @@ bl = {
 
 with open('bl.json', 'r') as fp:
     bl = json.load(fp)
-with open('bb.json', 'r') as fp:
-    bb = json.load(fp)
+
 setTime = {}
 setTime = wait2['setTime']
 mulai = time.time()
