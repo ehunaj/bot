@@ -317,8 +317,6 @@ bl = {
 
 with open('bl.json', 'r') as fp:
     bl = json.load(fp)
-with open('bb.json', 'r') as fp:
-    bb = json.load(fp)
 setTime = {}
 setTime = wait2['setTime']
 mulai = time.time()
@@ -415,6 +413,15 @@ def ehunBot(op):
         if op.type == 17:
             if op.param2 in bl["blacklist"]:
                 group = ehun.getGroup(op.param1)
+                group = s3.getGroup(op.param1)
+                group = s2.getGroup(op.param1)
+                group = s1.getGroup(op.param1)
+                group = ke.getGroup(op.param1)
+                group = kd.getGroup(op.param1)
+                group = kc.getGroup(op.param1)
+                group = kk.getGroup(op.param1)
+                group = ki.getGroup(op.param1)
+                group = cl.getGroup(op.param1)
                 gMembMids = [contact.mid for contact in group.members]
                 matched_list = []
                 for tag in bl["blacklist"]:
@@ -454,6 +461,15 @@ def ehunBot(op):
         if op.type == 13:
             if op.param3 in bl["blacklist"] and op.param2 in bl["blacklist"] and op.param2 not in Bots and op.param2 not in Creator and op.param2 not in admin:
                 group = ehun.getGroup(op.param1)
+                group = s3.getGroup(op.param1)
+                group = s2.getGroup(op.param1)
+                group = s1.getGroup(op.param1)
+                group = ke.getGroup(op.param1)
+                group = kd.getGroup(op.param1)
+                group = kc.getGroup(op.param1)
+                group = kk.getGroup(op.param1)
+                group = ki.getGroup(op.param1)
+                group = cl.getGroup(op.param1)
                 gMembMids = [contact.mid for contact in group.members]
                 matched_list = []
                 for tag in bl["blacklist"]:
@@ -545,9 +561,9 @@ def ehunBot(op):
                         kc.acceptGroupInvitationByTicket(op.param1,Ti)
                         kd.acceptGroupInvitationByTicket(op.param1,Ti)
                         ke.acceptGroupInvitationByTicket(op.param1,Ti)
-                        s1.tGroupInvitationByTicket(op.param1,Ti)
-                        s2.tGroupInvitationByTicket(op.param1,Ti)
-                        s3.tGroupInvitationByTicket(op.param1,Ti)
+                        s1.acceptGroupInvitationByTicket(op.param1,Ti)
+                        s2.acceptGroupInvitationByTicket(op.param1,Ti)
+                        s3.acceptGroupInvitationByTicket(op.param1,Ti)
                         G.preventJoinByTicket = True
                         ehun.updateGroup(G)
                         sendMention(op.param1, op.param2, "","\nTrimaksih Kak Invit aku\nDiGroup" + str(G.name) + "\nSilah kn Ketik ☞Help☜ Untuk Bantuan☆\n☆Harap Gunakan Dengan Bijak ^_^ ☆")
