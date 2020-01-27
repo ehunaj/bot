@@ -32,7 +32,7 @@ s Config(object):
 
     APP_VERSION = {
         'ANDROID': '8.14.2',
-        'IOS': '9.18.1' #8.14.2',
+        'IOS': '9.18.1', #8.14.2',
         'ANDROIDLITE': '2.1.0',
         'BIZANDROID': '1.7.2',
         'BIZIOS': '1.7.5',
@@ -47,10 +47,11 @@ s Config(object):
     USER_AGENT  = 'Line/9.18.1' #7.14.0'
     APP_TYPE    = ApplicationType.IOS
     APP_TYPE    = 'IOS'
+    APP_NAME    = 'appName=IOS\t9.18.1\tIOS\t12.4.1'
    # APP_VER     = APP_VERSION[APP_TYPE] if APP_TYPE in APP_VERSION else APP_VERSION['DEFAULT']
     CARRIER     = '51089, 1-0'
     SYSTEM_NAME = 'Ehun'
-    SYSTEM_VER  = '11.2.5'
+    SYSTEM_VER  = '12.4.1' #11.2.5'
     IP_ADDR     = '8.8.8.8'
     EMAIL_REGEX = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
