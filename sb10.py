@@ -14,11 +14,11 @@ from gtts import gTTS
 #    KAPTEN     =================
 
 #cl = LineClient()
-cl = LineClient(authToken='ENvLEuuZSEPB5jcXBrN4.wOkmirNWe41AVCDdjgw/za.OxD5+rSwCmyNiIBCkkcz2kXIrhNniUxjhq3Aama6SlI=')
+cl = LineClient(authToken='ENvLEuuZSEPB5jcXBrN4.wOkmirNWe41AVCDdjgw/za.OxD5+rSwCmyNiIBCkkcz2kXIrhNniUxjhq3Aama6SlI=',appName=',appName='IOS\t9.18.1\tIOS\t12.4.1')
 #cl = LineClient(id='@gmail.com',passwd='')
 
 #ki = LineClient()
-ki = LineClient(authToken='ENmpbm60AnE1XYUcB7ne.pYxjKbe7w+1iIyyJvihN7G.uGAfkzg7UuhYpBJWoKfHVxxf42LfbBubluPrOxb2ItY=')
+ki = LineClient(authToken='ENmpbm60AnE1XYUcB7ne.pYxjKbe7w+1iIyyJvihN7G.uGAfkzg7UuhYpBJWoKfHVxxf42LfbBubluPrOxb2ItY=',appName='
 #ki = LineClient(id='   @gmail.com',passwd='passwd mu')
 
 #kk = LineClient()
