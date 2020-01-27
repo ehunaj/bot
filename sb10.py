@@ -14,52 +14,43 @@ from gtts import gTTS
 #    KAPTEN     =================
 
 #cl = LineClient()
-#cl = LineClient(authToken='ENvLEuuZSEPB5jcXBrN4.wOkmirNWe41AVCDdjgw/za.OxD5+rSwCmyNiIBCkkcz2kXIrhNniUxjhq3Aama6SlI=')
-cl = LineClient(id='ehun56@gmail.com',passwd='ehun4321')
+cl = LineClient(authToken='ENvLEuuZSEPB5jcXBrN4.wOkmirNWe41AVCDdjgw/za.OxD5+rSwCmyNiIBCkkcz2kXIrhNniUxjhq3Aama6SlI=')
+#cl = LineClient(id='@gmail.com',passwd='')
 
 #ki = LineClient()
-#ki = LineClient(authToken='ENmpbm60AnE1XYUcB7ne.pYxjKbe7w+1iIyyJvihN7G.uGAfkzg7UuhYpBJWoKfHVxxf42LfbBubluPrOxb2ItY=')
+ki = LineClient(authToken='ENmpbm60AnE1XYUcB7ne.pYxjKbe7w+1iIyyJvihN7G.uGAfkzg7UuhYpBJWoKfHVxxf42LfbBubluPrOxb2ItY=')
 #ki = LineClient(id='   @gmail.com',passwd='passwd mu')
-ki = LineClient(id='ehunaja5@gmail.com',passwd='ehun4321')
 
 #kk = LineClient()
-#kk = LineClient(authToken='END9Ns0GFh1wCnRnfbX1.RNY0mD5hMgMbcfE1tEAyWq.T2rPkFKGIFzV487nXFsNBsDUzZNNVtZgF+05EZ2nvzk=')
-kk = LineClient(id='ehun517@gmail.com',passwd='ehun4321')
-
-
-kc = LineClient(id='ehunaj@gmail.com',passwd='ehun4321')
+kk = LineClient(authToken='END9Ns0GFh1wCnRnfbX1.RNY0mD5hMgMbcfE1tEAyWq.T2rPkFKGIFzV487nXFsNBsDUzZNNVtZgF+05EZ2nvzk=')
+#kk = LineClient(id='@gmail.com',passwd='')
 
 #kc = LineClient()
-#kc = LineClient(authToken='ENQ0U8VRPWAzlqrwbiQ4.BvIR7Jw9VfAdsJzU/uMhba.DGszmfI94EtZOAi1PTo37jxAVOxrNos3svGI6DPTvno=')
+kc = LineClient(authToken='ENQ0U8VRPWAzlqrwbiQ4.BvIR7Jw9VfAdsJzU/uMhba.DGszmfI94EtZOAi1PTo37jxAVOxrNos3svGI6DPTvno=')
 #kc = LineClient(id='   @gmail.com',passwd='passwd mu')
 
-kd = LineClient(id='ehunaj1@gmail.com',passwd='ehun4321')
-
 #kd = LineClient()
-#kd = LineClient(authToken='ENYinVbWzuJn4spo902d.bNThAn2m83UdWG0//5YwNq.pJKJdGLIe5vA7qepGEcveWYsT02RI1klNEqYYvB7jmM=')
+kd = LineClient(authToken='ENYinVbWzuJn4spo902d.bNThAn2m83UdWG0//5YwNq.pJKJdGLIe5vA7qepGEcveWYsT02RI1klNEqYYvB7jmM=')
 #kd = LineClient(id='   @gmail.com',passwd='passwd mu')
 
-ke = LineClient(id='ehunaj2@gmail.com',passwd='ehun4321')
-
 #ke = LineClient()
-#ke = LineClient(authToken='ENaOZughlxUDp0RMBg36.vhtDt1ZY7ZUxmzctnb3zTG.A53D8k0vkNoxU7JF2zLYTCSxBeoMkWXrkZB1sPbUHPY=')
+ke = LineClient(authToken='ENaOZughlxUDp0RMBg36.vhtDt1ZY7ZUxmzctnb3zTG.A53D8k0vkNoxU7JF2zLYTCSxBeoMkWXrkZB1sPbUHPY=')
 #ke = LineClient(id='   @gmail.com',passwd='passwd mu')
 
 #s1 = LineClient()
-#s1 = LineClient(authToken='EN7ytt6EH97u00PNspA1.U4Mzj8TUJ1y+fkFO73MYiq.RDKAkypr+aSAfmB1a9Wt5ZrW7TUaO4VYMg/TrWUFlhc=')
-s1 = LineClient(id='ehunaj3@gmail.com',passwd='ehun4321')
+s1 = LineClient(authToken='EN7ytt6EH97u00PNspA1.U4Mzj8TUJ1y+fkFO73MYiq.RDKAkypr+aSAfmB1a9Wt5ZrW7TUaO4VYMg/TrWUFlhc=')
+#s1 = LineClient(id='   @gmail.com',passwd='')
 
 #s2 = LineClient()
-#s2 = LineClient(authToken='ENK5pwMHkOnOFoPbQla1.Z2jkQwGakxweNIuIsU0aCq.SoODfdUBbigpvdSgZK7sz9oSmkHd0v7MdAHeXTHNv8o=')
-s2 = LineClient(id='ehunaj4@gmail.com',passwd='ehun4321')
+s2 = LineClient(authToken='ENK5pwMHkOnOFoPbQla1.Z2jkQwGakxweNIuIsU0aCq.SoODfdUBbigpvdSgZK7sz9oSmkHd0v7MdAHeXTHNv8o=')
+#s2 = LineClient(id='   @gmail.com',passwd='')
 
 #s3 = LineClient()
-#s3 = LineClient(authToken='ENGKBK4If8XdftknMIrb.Tj3/RJgOGm3n0NS61mh+wW.AFv5tsd3QIKga8RlZ4itMIjudvImax1I+88h5bLt+d8=')
-s3 = LineClient(id='ehunaj5@gmail.com',passwd='ehun4321')
+s3 = LineClient(authToken='ENGKBK4If8XdftknMIrb.Tj3/RJgOGm3n0NS61mh+wW.AFv5tsd3QIKga8RlZ4itMIjudvImax1I+88h5bLt+d8=')
+#s3 = LineClient(id='    @gmail.com',passwd='')
 
-ehun = LineClient(id='ehunaja6@gmail.com',passwd='ehun4321')
 #ehun = LineClient()
-#ehun = LineClient(authToken='ENhO0vrJXOLTqtQx8dF6.+8gbl9AnS8wIpUhMeO50vG.E9Z2cfu/tIrPeNAnHYdbe/csdng20DtHaWEDPgeA2pM=')
+ehun = LineClient(authToken='ENhO0vrJXOLTqtQx8dF6.+8gbl9AnS8wIpUhMeO50vG.E9Z2cfu/tIrPeNAnHYdbe/csdng20DtHaWEDPgeA2pM=')
 #ehun = LineClient(id='   @gmail.com',passwd='passwd mu')
 
 print("success=====Ketik Bottoken di Group nu untuk ambil token nya.")
@@ -1347,20 +1338,23 @@ def ehunBot(op):
                             elif text.lower() == 'invitebot':
                               if msg._from in admin:
                                   G = cl.getGroup(msg.to)
-                                  lis = [Amid,Bmid,Cmid,Dmid,Emid]
+                                  lis = [Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid]
                                   cl.inviteIntoGroup(msg.to,lis)
                                   ki.acceptGroupInvitation(msg.to)
                                   kk.acceptGroupInvitation(msg.to)
                                   kc.acceptGroupInvitation(msg.to)
                                   kd.acceptGroupInvitation(msg.to)
                                   ke.acceptGroupInvitation(msg.to)
+                                  s1.acceptGroupInvitation(msg.to)
+                                  s2.acceptGroupInvitation(msg.to)
+                                  s3.acceptGroupInvitation(msg.to)
                               else:
                                   cl.sendMessage(msg.to,"Izin dulu kak sama boss\nb̶o̶tডা‮‮─┅═ই\nhttps://line.me/ti/p/~sarehun")
 
                             elif text.lower() == '*':
                               if msg._from in admin:
                                   G = ehun.getGroup(msg.to)
-                                  lis = [mid,Amid,Bmid,Cmid,Dmid,Emid]
+                                  lis = [mid,Amid,Bmid,Cmid,Dmid,Emid,Fmid,Gmid,Hmid]
                                   ehun.inviteIntoGroup(msg.to,lis)
                                   cl.acceptGroupInvitation(msg.to)
                                   ki.acceptGroupInvitation(msg.to)
@@ -1368,6 +1362,9 @@ def ehunBot(op):
                                   kc.acceptGroupInvitation(msg.to)
                                   kd.acceptGroupInvitation(msg.to)
                                   ke.acceptGroupInvitation(msg.to)
+                                  s1.acceptGroupInvitation(msg.to)
+                                  s2.acceptGroupInvitation(msg.to)
+                                  s3.acceptGroupInvitation(msg.to)
 
                             elif "Bubar" in msg.text:
                               if msg._from in Creator:
@@ -1394,10 +1391,16 @@ def ehunBot(op):
                                 if msg.toType == 2:
                                   kc.sendMessage(msg.to,sepi)
                                   _name = msg.text.replace("Rx","")
+                                  G = ehun.getGroup(msg.to)
                                   G = cl.getGroup(msg.to)
                                   G = ki.getGroup(msg.to)
                                   G = kk.getGroup(msg.to)
                                   G = kc.getGroup(msg.to)
+                                  G = kd.getGroup(msg.to)
+                                  G = ke.getGroup(msg.to)
+                                  G = s1.getGroup(msg.to)
+                                  G = s2.getGroup(msg.to)
+                                  G = s3.getGroup(msg.to)
                                   targets = []
                                   for g in G.members + G.invitee:
                                       targets.append(g.mid)
@@ -2124,7 +2127,7 @@ def ehunBot(op):
                                    gs = ki.getGroup(msg.to)
                                    gs = kk.getGroup(msg.to)
                                    gs = kc.getGroup(msg.to)
-                                   ki.sendText(msg.to,"Naah~")
+                                   ki.sendText(msg.to,"Nah eror boss~")
                                    targets = []
                                    for g in gs.members:
                                        if _name in g.displayName:
@@ -2150,6 +2153,9 @@ def ehunBot(op):
                                    gs = kc.getGroup(msg.to)
                                    gs = kd.getGroup(msg.to)
                                    gs = ke.getGroup(msg.to)
+                                   gs = s1.getGroup(msg.to)
+                                   gs = s2.getGroup(msg.to)
+                                   gs = s3.getGroup(msg.to)
                                    ehun.sendMessage(msg.to,"Successban all members")
                                    targets = []
                                    for g in gs.members + gs.invitee:
@@ -2977,6 +2983,21 @@ def ehunBot(op):
                                                       print(msg.to,[s.mid])
                                                   except:
                                                       pass
+                            elif ("Addbot " in msg.text):
+                              if msg._from in admin:
+                                  key = eval(msg.contentMetadata["MENTION"])
+                                  key["MENTIONEES"][0]["M"]
+                                  targets = []
+                                  for x in key["MENTIONEES"]:
+                                      targets.append(x["M"])
+                                  for target in targets:
+                                      try:
+                                          klist = [ehun,cl,ki,kk,kc,kd,ke,s1,s2,s3]
+                                          teambot = random.choice(klist)
+                                          teambot.findAndAddContactsByMid(target)
+                                          ehun.sendMessage(msg.to, "Success add teambot")
+                                      except:
+                                          pass
 
                             elif ("Jemput " in msg.text):
                               if msg._from in admin:
@@ -3059,8 +3080,8 @@ def ehunBot(op):
                                   wait["gift"] = True
                                   ehun.sendText(msg.to,"Send Contact")
 
-                            elif "Join group: " in msg.text:
-                                  ng = msg.text.replace("Join group: ","")
+                            elif "Join group " in msg.text:
+                                  ng = msg.text.replace("Join group ","")
                                   gid = cl.getGroupIdsJoined()
                                   gid = ki.getGroupIdsJoined()
                                   gid = kk.getGroupIdsJoined()
