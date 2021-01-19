@@ -3,7 +3,7 @@ from akad.ttypes import ApplicationType
 import re, json, requests, urllib
 
 class LineServer(object):
-s Config(object):
+ 
     LINE_HOST_DOMAIN            = 'https://gd2.line.naver.jp'
     LINE_OBS_DOMAIN             = 'https://obs-sg.line-apps.com'
     LINE_TIMELINE_API           = 'https://gd2.line.naver.jp/mh/api'
